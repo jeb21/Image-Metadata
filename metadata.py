@@ -11,7 +11,7 @@ image = Image.open(metaimg)
 exifdata = image.getexif()
 
 # extract other basic metadata
-print("__________________METADATA___________________")
+print("_______________________________________METADATA_________________________________________")
 info = {
     "Filename": os.path.basename(image.filename),
     "Image Size in MB": os.path.getsize(metaimg) / (1024*1024),# size in MB
